@@ -79,7 +79,7 @@ h1 {
 }
 
 #center {
-  background-image: url("cinqueterre01.jpg");
+  background-image: url("images/cinqueterre01.jpg");
   background-size: contain;
   display: flex;
   flex-direction: row;
@@ -150,7 +150,7 @@ article {
 }
 
 aside#right {
-  background-image: url("syracuse.jpg");
+  background-image: url("images/syracuse.jpg");
   background-repeat: no-repeat;
   flex-grow: 2;
   /*changed this from 2*/
