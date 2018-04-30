@@ -19,13 +19,27 @@
   --secondary-text: black;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   display: flex;
-  /* min-height: 100vh;*/
+  min-height: 100vh;
   flex-direction: column;
-  flex-wrap: nowrap;
-  flex-basis: auto;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
   font-family: 'Slabo 27px', serif;
+  background-color: var(--secondary-color);
 }
 
 /*------------------------------------*\ 
@@ -79,15 +93,16 @@ h1 {
 }
 
 #center {
+  display: flex;
+  flex: 1;
   background-image: url("images/cinqueterre01.jpg");
   background-size: contain;
   display: flex;
   flex-direction: row;
   background-color: var(--secondary-color);
   flex-wrap: nowrap;
-  flex-grow: auto;
-  background-repeat: no-repeat;
-  order: 1;
+  background-repeat: horizontal;
+  min-height: 90vh - 6rem;
 }
 
 main {
@@ -95,11 +110,12 @@ main {
   flex-direction: row;
   /*background-color: var(--secondary-color);*/
   flex-grow: 9;
-
+  min-height: 90vh - 6rem;
 }
 
 nav#left {
   flex-grow: 2;
+  min-height: 90vh - 6rem;
   /*padding-left:75px;
   padding-bottom:100px; added this*/
 }
@@ -165,16 +181,19 @@ footer {
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   background: var(--secondary-color);
-  flex-grow: 2;
-  order: 99;
+  max-height: 15rem;
 }
 
 footer > nav {
   flex-direction: row;
   background-color: cyan;
 }
-
 
 #legal > nav {
   flex-direction: row;
@@ -216,7 +235,6 @@ footer > nav {
   background-color: red;
   order: 1;
   font-size: .8em;
-
 }
 
 #webmaster {
