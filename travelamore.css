@@ -50,7 +50,7 @@ header {
   display: flex;
   background: var(--secondary-color);
   flex-direction: row;
-  height: 10vh;
+  height: 15vh;
   order: -1;
 }
 
@@ -257,6 +257,23 @@ aside {
 /*------------------------------------*\ 
   #DISCLAIMER SECTION
 \*------------------------------------*/
+
+#disclaimer > img {
+  width: 40px;
+  position: absolute;
+}
+
+#disclaimer > h1 {
+  padding-left: 3em;
+}
+
+#disclaimer > h1:before {
+  background-image: url(images/disclaimer.svg);
+  background-size: 40px 40px;
+  display: inline-block;
+  margin-left: 3em;
+  width: 3em;
+}
 
 #disclaimer > ol {
   list-style-type: upper-roman;
