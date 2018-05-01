@@ -91,16 +91,37 @@ h1 {
   text-shadow: 1px 2px #F5F5DC;
 }
 
+/* The animation code */
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+
 #center {
+  animation-name: example;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
   display: flex;
   flex: 1;
   background-image: url("images/cinqueterre01.jpg");
-  background-size: contain;
-  display: flex;
+  background-size: 80% auto;
+  /*background-attachment: fixed;*/
   flex-direction: row;
   background-color: var(--secondary-color);
   flex-wrap: nowrap;
-  background-repeat: horizontal;
+  background-repeat: no-repeat;
   min-height: 90vh - 6rem;
 }
 
@@ -260,19 +281,6 @@ aside {
 
 #disclaimer > img {
   width: 40px;
-  position: absolute;
-}
-
-#disclaimer > h1 {
-  padding-left: 3em;
-}
-
-#disclaimer > h1:before {
-  background-image: url(images/disclaimer.svg);
-  background-size: 40px 40px;
-  display: inline-block;
-  margin-left: 3em;
-  width: 3em;
 }
 
 #disclaimer > ol {
