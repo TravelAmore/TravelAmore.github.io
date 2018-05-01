@@ -66,6 +66,7 @@ header {
 
 #logo img {
   height: 11vh;
+  padding-left: 55px;
 }
 
 #menu {
@@ -110,19 +111,21 @@ h1 {
 
 
 #center {
-  animation-name: example;
-  animation-duration: 7s;
+  /*animation-duration: 7s;
   animation-iteration-count: infinite;
-  display: flex;
-  flex: 1;
-  background-image: url("images/cinqueterre01.jpg");
-  background-size: 80% auto;
-  /*background-attachment: fixed;*/
-  flex-direction: row;
+animation-name: example;*/
   background-color: var(--secondary-color);
-  flex-wrap: nowrap;
+  background-image: url("images/cinqueterre01.jpg"), url("images/italy341_600.jpg");
+  background-position: left top, right top;
   background-repeat: no-repeat;
+  background-size: 80% auto, 19.4% auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex: 1;
   min-height: 90vh - 6rem;
+  width: 99.3%;
+
 }
 
 main {
@@ -207,7 +210,7 @@ footer {
   left: 0;
   padding: 1rem;
   background: var(--secondary-color);
-  max-height: 15rem;
+  max-height: 10rem;
 }
 
 footer > nav {
@@ -302,3 +305,67 @@ aside {
 }
 
 #disclaimer p {}
+
+/*------------------------------------*\ 
+  #CONTACTUS SECTION
+\*------------------------------------*/
+
+#contactus > div > address {
+  background-color: beige;
+  padding: 10px; 
+}
+
+#contactus > div > aside{
+  background-color: beige;
+  
+  
+}
+
+#contactus > div {
+  display: flex;
+
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tg td {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+.tg th {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+  overflow: hidden;
+  word-break: normal;
+  border-color: black;
+}
+
+.tg .tg-c3ow {
+  border-color: inherit;
+  text-align: center;
+  vertical-align: top
+}
+
+.tg .tg-amwm {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top
+}
+
+.tg .tg-yw4l {
+  vertical-align: top
+}
