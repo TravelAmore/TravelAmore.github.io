@@ -386,3 +386,22 @@ aside {
 .tg .tg-yw4l {
   vertical-align: top
 }
+
+/*------------------------------------*\ 
+  #ABOUTUS SECTION
+\*------------------------------------*/
+
+#aboutus p {
+  background-color: beige;
+  max-width: 20em;
+  font-size: 2.8vh;
+  padding: 35px;
+}
+
+#aboutus img {
+  width: 40px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: fuchsia;
+}
