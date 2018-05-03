@@ -448,18 +448,31 @@ aside {
 \*------------------------------------*/
 
 #interactive_map {
-  float: left;
-  width: 768px;
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #interactive_map > h1 {
   font-size: 1.5em;
   margin: 20px;
+  width: 30%;
+
 }
 
 #interactive_map p {
   line-height: 1.4em;
   margin: 20px;
+}
+
+#interactive_map > p {
+  width: 50%;
+  margin: 0;
+  padding: 0;
 }
 
 div.mapInfo {
@@ -474,4 +487,70 @@ div.mapInfo h2 {
   font-size: 22px;
   font-weight: normal;
   padding: 10px 20px;
+}
+
+
+/* Map Styles */
+
+div#battleMap {
+  width: 525px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+img#mapImage {
+  display: block;
+  width: 100%;
+}
+
+div.battleMarkers > a {
+  position: absolute;
+}
+
+a#marker1 {
+  position: absolute;
+  top: 220px;
+  left: 340px;
+}
+
+a#marker2 {
+  position: absolute;
+  top: 194px;
+  left: 358px;
+}
+
+a#marker3 {
+  position: absolute;
+  top: 202px;
+  left: 400px;
+}
+
+a#marker4 {
+  position: absolute;
+  top: 217px;
+  left: 452px;
+}
+
+a#marker5 {
+  position: absolute;
+  top: 229px;
+  left: 498px;
+}
+
+a#marker6 {
+  position: absolute;
+  top: 246px;
+  left: 544px;
+}
+
+div.mapInfo {
+  display: none;
+
+}
+
+a.battleMarkers:hover + div.mapInfo {
+  display: block;
 }
