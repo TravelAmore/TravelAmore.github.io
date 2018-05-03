@@ -459,8 +459,9 @@ aside {
 
 #interactive_map > h1 {
   font-size: 1.5em;
+  flex-grow: 1;
   margin: 20px;
-  width: 30%;
+  order:2; 
 
 }
 
@@ -470,9 +471,13 @@ aside {
 }
 
 #interactive_map > p {
+  flex-grow: 1; 
   width: 50%;
-  margin: 0;
+  max-width: 22em;
+  margin: 10px;
   padding: 0;
+  order: 1; 
+  background-color:beige;
 }
 
 div.mapInfo {
@@ -492,13 +497,14 @@ div.mapInfo h2 {
 
 /* Map Styles */
 
-div#battleMap {
+div#tour_map {
   width: 525px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
+  order:3; 
 }
 
 img#mapImage {
@@ -506,7 +512,7 @@ img#mapImage {
   width: 100%;
 }
 
-div.battleMarkers > a {
+div.tour_markers > a {
   position: absolute;
 }
 
