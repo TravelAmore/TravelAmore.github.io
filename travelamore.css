@@ -451,17 +451,23 @@ aside {
   display: flex;
   align-content: flex-start;
   align-items: flex-start;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
 }
 
 #interactive_map > h1 {
-  font-size: 1.5em;
+  font-size: 2.3em;
   flex-grow: 1;
   margin: 20px;
-  order:2; 
+  order: 2;
+  position: absolute;
+  top: 120px;
+  left:250px;
+  background-color: rgba(255, 255, 255, .4);
+  width: 300px;
+  padding-left: 20px;
 
 }
 
@@ -471,13 +477,13 @@ aside {
 }
 
 #interactive_map > p {
-  flex-grow: 1; 
+  flex-grow: 1;
   width: 50%;
   max-width: 22em;
   margin: 10px;
   padding: 0;
-  order: 1; 
-  background-color:beige;
+  order: 1;
+  background-color: beige;
 }
 
 div.mapInfo {
@@ -485,6 +491,7 @@ div.mapInfo {
   color: rgb(214, 192, 144);
   margin-top: 20px;
   padding-bottom: 20px;
+  width: 400px;
 }
 
 div.mapInfo h2 {
@@ -498,18 +505,43 @@ div.mapInfo h2 {
 /* Map Styles */
 
 div#tour_map {
-  width: 525px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  order:3; 
+  order: 3;
+  width: 100%;
 }
 
 img#mapImage {
   display: block;
-  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 350px;
+  height: 450px;
+}
+
+#map_div {
+  background-image: url("images/blueparchment.jpg");
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  width: 390px;
+}
+
+#map_div > figcaption {
+  color: ivory;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: "IM Fell DW Pica";
+  padding-bottom: 5px;
+  background-color: darkseagreen;
 }
 
 div.tour_markers > a {
@@ -518,26 +550,26 @@ div.tour_markers > a {
 
 a#marker1 {
   position: absolute;
-  top: 220px;
-  left: 340px;
+  top: 70px;
+  right: 199px;
 }
 
 a#marker2 {
   position: absolute;
-  top: 194px;
-  left: 358px;
+  top: 118px;
+  right: 286px;
 }
 
 a#marker3 {
   position: absolute;
-  top: 202px;
-  left: 400px;
+  top: 155px;
+  right: 220px;
 }
 
 a#marker4 {
   position: absolute;
-  top: 217px;
-  left: 452px;
+  top: 250px;
+  right: 113px;
 }
 
 a#marker5 {
@@ -554,9 +586,9 @@ a#marker6 {
 
 div.mapInfo {
   display: none;
-
+  align-self: flex-end;
 }
 
-a.battleMarkers:hover + div.mapInfo {
+a.tour_markers:hover + div.mapInfo {
   display: block;
 }
