@@ -618,3 +618,45 @@ a.tour_markers:hover + div.mapInfo {
   width: auto;
   height: auto;
 }
+
+/*------------------------------------*\ 
+  #PRIVACY POLICY SECTION
+\*------------------------------------*/
+
+#privacy {
+  display: block;
+  justify-content: space-between;
+  font-family: "IM Fell DW Pica";
+
+
+
+}
+
+#privacy h1 {
+  font-family: "Smooth Stone";
+  font-size: 1.2em;
+  max-width: 530px;
+  text-align: center;
+  align-self: center;
+  text-shadow: 1px 2px #F5F5DC;
+}
+
+#privacy h2 {
+  font-family: "Smooth Stone";
+  font-size: 1.2em;
+  max-width: 530px;
+  text-align: center;
+  align-self: center;
+  text-shadow: 1px 2px #F5F5DC;
+}
+
+#privacy h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+  max-width: 530px;
+  background-color: wheat;
+}
