@@ -510,10 +510,10 @@ div#tour_map {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-top: 20px;
+  margin-top: -16px;
   margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  /*margin-right:-40px;*/
+  /*margin-left: auto;*/
   position: relative;
   order: 3;
   width: 100%;
@@ -525,7 +525,7 @@ img#mapImage {
   margin-left: 20px;
   margin-right: 20px;
   width: 350px;
-  height: 450px;
+  height: 462px;
 }
 
 #map_div {
@@ -533,6 +533,8 @@ img#mapImage {
   /*background-repeat: no-repeat;*/
   background-size: cover;
   width: 390px;
+  border: 2px solid black;
+  box-shadow: 15px 14px 26px -6px rgba(0,0,0,0.4); 
 }
 
 #map_div > figcaption {
@@ -586,7 +588,7 @@ a#marker6 {
 
 div.mapInfo {
   display: none;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 
 a.tour_markers:hover + div.mapInfo {
