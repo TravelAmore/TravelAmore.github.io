@@ -687,5 +687,6 @@ li {
 #terms h3 {
   background-color: darksalmon;
   font-family: "IM Fell DW Pica";
-  align-text: center;
+  text-align:center;
+  padding:4px 0 4px 0;
 }
