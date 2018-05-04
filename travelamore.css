@@ -100,6 +100,7 @@ header h1 {
   font-size: 2.5em;
   align-self: center;
   text-shadow: 1px 2px #F5F5DC;
+  background-color: rgba(255, 255, 255, .3);
 }
 
 /* The animation code */
@@ -627,8 +628,8 @@ a.tour_markers:hover + div.mapInfo {
   display: block;
   justify-content: space-between;
   font-family: "IM Fell DW Pica";
-
-
+  background-color: wheat;
+  padding: 20px;
 
 }
 
@@ -658,5 +659,33 @@ p,
 ul,
 li {
   max-width: 530px;
+
+}
+
+
+/*------------------------------------*\ 
+  #TERMS SECTION
+\*------------------------------------*/
+
+#terms {
+  padding: 20px
+}
+
+#terms > article {
   background-color: wheat;
+}
+
+#terms h1 {
+  font-family: "Smooth Stone";
+  font-size: 1.2em;
+  max-width: 530px;
+  text-align: center;
+  align-self: center;
+  text-shadow: 1px 2px #F5F5DC;
+}
+
+#terms h3 {
+  background-color: darksalmon;
+  font-family: "IM Fell DW Pica";
+  align-text: center;
 }
