@@ -54,6 +54,16 @@ header {
   order: -1;
 }
 
+header h1 {
+  word-spacing: 25px;
+  letter-spacing: .25em;
+  font-family: "Smooth Stone";
+  font-size: 3.3em;
+  align-self: center;
+
+  text-shadow: 1px 2px #F5F5DC;
+}
+
 #title {
   order: 3;
   flex-grow: 8;
@@ -83,7 +93,7 @@ header {
   #CENTER SECTION
 \*------------------------------------*/
 
-h1 {
+#center h1 {
   word-spacing: 25px;
   letter-spacing: .25em;
   font-family: "Smooth Stone";
@@ -151,7 +161,8 @@ nav#left {
   flex-grow: 2;
   min-height: 90vh - 6rem;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-  padding: 10px 0;
+  padding: 0 0;
+  margin-left: 50px;
 }
 
 nav#left ul {
@@ -160,6 +171,7 @@ nav#left ul {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   width: 220px;
+  padding: 0 0;
 }
 
 
@@ -460,7 +472,7 @@ aside {
 #interactive_map > h1 {
   font-size: 1.9em;
   flex-grow: 1;
-  word-spacing:-1px;
+  word-spacing: -1px;
   margin: 20px;
   order: 2;
   position: absolute;
@@ -488,16 +500,20 @@ aside {
 }
 
 div.mapInfo {
-  background-color: rgb(144, 24, 26);
-  color: rgb(214, 192, 144);
+  background-color: wheat;
+  color: black;
+  font-size: 1.07em;
+  font-family: "IM Fell DW Pica";
   margin-top: 20px;
   padding-bottom: 20px;
   width: 400px;
 }
 
 div.mapInfo h2 {
-  background-color: rgb(96, 87, 70);
-  font-size: 22px;
+  background-color: lightblue;
+  font-size: 1.5em;
+  color: darkblue;
+  font-family: "IM Fell DW Pica";
   font-weight: normal;
   padding: 10px 20px;
 }
@@ -539,7 +555,7 @@ img#mapImage {
 }
 
 #map_div > figcaption {
-  color:darkslateblue;
+  color: darkblue;
   font-size: 1.3em;
   text-align: center;
   font-family: "IM Fell DW Pica";
@@ -560,7 +576,7 @@ a#marker1 {
 a#marker2 {
   position: absolute;
   top: 170px;
-  right:260px;
+  right: 260px;
 }
 
 a#marker3 {
