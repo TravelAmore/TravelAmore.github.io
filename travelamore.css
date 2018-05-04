@@ -87,7 +87,7 @@ h1 {
   word-spacing: 25px;
   letter-spacing: .25em;
   font-family: "Smooth Stone";
-  font-size: 2.3em;
+  font-size: 2.5em;
   align-self: center;
   text-shadow: 1px 2px #F5F5DC;
 }
@@ -458,15 +458,16 @@ aside {
 }
 
 #interactive_map > h1 {
-  font-size: 2.3em;
+  font-size: 1.9em;
   flex-grow: 1;
+  word-spacing:-1px;
   margin: 20px;
   order: 2;
   position: absolute;
   top: 120px;
   left: 250px;
-  background-color: rgba(255, 255, 255, .4);
-  width: 300px;
+  background-color: rgba(255, 255, 255, .2);
+  width: 250px;
   padding-left: 20px;
 
 }
@@ -538,12 +539,12 @@ img#mapImage {
 }
 
 #map_div > figcaption {
-  color: ivory;
+  color:darkslateblue;
   font-size: 1.3em;
   text-align: center;
   font-family: "IM Fell DW Pica";
   padding-bottom: 5px;
-  background-color: darkseagreen;
+  background-color: lightblue;
 }
 
 div.tour_markers > a {
@@ -552,38 +553,26 @@ div.tour_markers > a {
 
 a#marker1 {
   position: absolute;
-  top: 70px;
-  right: 199px;
+  top: 85px;
+  right: 240px;
 }
 
 a#marker2 {
   position: absolute;
-  top: 118px;
-  right: 286px;
+  top: 170px;
+  right:260px;
 }
 
 a#marker3 {
   position: absolute;
-  top: 155px;
-  right: 220px;
+  top: 275px;
+  right: 150px;
 }
 
 a#marker4 {
   position: absolute;
-  top: 250px;
-  right: 113px;
-}
-
-a#marker5 {
-  position: absolute;
-  top: 229px;
-  left: 498px;
-}
-
-a#marker6 {
-  position: absolute;
-  top: 246px;
-  left: 544px;
+  top: 400px;
+  right: 166px;
 }
 
 div.mapInfo {

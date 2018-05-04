@@ -5,7 +5,7 @@
 		<style type="text/css">
 			.land
 			{
-				fill:ivory;
+				fill:DarkKhaki;
 				fill-opacity: 1;
 				stroke:black;
 				stroke-opacity: 1;
@@ -14,7 +14,7 @@
 			
 			.land1
 			{
-				fill: grey;
+				fill: Wheat;
 				fill-opacity: 1;
 				stroke:black;
 				stroke-opacity: 1;
@@ -23,7 +23,7 @@
 			
 			.land2
 			{
-				fill: orange;
+				fill: Wheat;
 				fill-opacity: 1;
 				stroke:black;
 				stroke-opacity: 1;
@@ -32,7 +32,7 @@
 			
 			.land3
 			{
-				fill: blue;
+				fill: Wheat;
 				fill-opacity: 1;
 				stroke:black;
 				stroke-opacity: 1;
@@ -40,7 +40,7 @@
 			}
 			.land4
 			{
-				fill: purple;
+				fill: Wheat;
 				fill-opacity: 1;
 				stroke:black;
 				stroke-opacity: 1;
