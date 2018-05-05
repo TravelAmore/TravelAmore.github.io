@@ -5,18 +5,24 @@
 \*------------------------------------*/
 
 :root {
-  --primary-color: #7a9d96;
+  --primary-color: #e7c24c;
   /*use "var(--primary-color);"*/
   --primary-text: black;
-  --p-light-color: #cae4db;
+  --p-light-color: #fff47d;
+  --s-light-color: #80d6ff;
   /*light blue*/
   --p-light-text: black;
-  --p-dark-color: #00303f;
+  --p-dark-color: #b29216;
+  --s-dark-color: #0077c2;
   /*dark blue*/
   --p-dark-text: white;
-  --secondary-color: #e7c24c;
+  --secondary-color: #42a5f5;
   /*#dcae1d; gold*/
   --secondary-text: black;
+  --gray-color: #888888;
+  --g-light-color: #b8b8b8;
+  --g-dark-color: #5b5b5b;
+
 }
 
 html {
@@ -41,8 +47,8 @@ body {
   padding-bottom: 6rem;
   min-height: 100%;
   font-family: 'Slabo 27px', serif;
-  background-color: dimgray;
-  /*var(--secondary-color);*/
+  background-color: var(--g-light-color);
+  /*var(--primary-color);*/
 }
 
 /*------------------------------------*\ 
@@ -51,7 +57,8 @@ body {
 
 header {
   display: flex;
-  background: var(--secondary-color);
+  background: var(--primary-color);
+  /*background: #A98E38;*/
   flex-direction: row;
   height: 15vh;
   order: -1;
@@ -124,7 +131,7 @@ header h1 {
   /*animation-duration: 7s;
   animation-iteration-count: infinite;
 animation-name: example;*/
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   /* background-image: url("images/cinqueterre01_1024x600.jpg"), url("images/italy341_600.jpg");
   background-position: left top, right top;
   background-repeat: no-repeat;
@@ -145,21 +152,10 @@ animation-name: example;*/
 main {
   display: flex;
   flex-direction: row;
-  /*background-color: var(--secondary-color);*/
+  /*background-color: var(--primary-color);*/
   flex-grow: 9;
   min-height: 90vh - 6rem;
 }
-
-/*nav#left {
-  flex-grow: 2;
-  min-height: 90vh - 6rem;
-}
-
-nav#left ul {
-  flex-direction: column;
-  list-style-type: none;
-  text-align: center;
-}*/
 
 nav#left {
   flex-grow: 2;
@@ -255,7 +251,7 @@ footer {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   max-height: 10rem;
   max-width: 1200px;
   margin: auto;
@@ -337,7 +333,10 @@ aside {
 #disclaimer > ol {
   list-style-type: upper-roman;
   max-width: 530px;
-  background-color: beige;
+  background-color: var(--p-light-color);
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
+  padding: 20px 30px 20px 50px;
 }
 
 #disclaimer li {
@@ -359,7 +358,9 @@ aside {
 \*------------------------------------*/
 
 #contactus > div.address > address {
-  background-color: beige;
+  background-color: var(--p-light-color);
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
   padding: 10px;
 }
 
@@ -376,7 +377,9 @@ aside {
 }
 
 #contactus > div.address > aside {
-  background-color: beige;
+  background-color: var(--p-light-color);
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
 
 }
 
@@ -442,10 +445,16 @@ aside {
 \*------------------------------------*/
 
 #aboutus p {
-  background-color: beige;
   max-width: 20em;
-  font-size: 2.8vh;
-  padding: 35px;
+  font-size: 2.7vh;
+}
+
+#aboutus > article {
+  background-color: var(--p-light-color);
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
+  padding: 20px;
+  margin-top: 15px;
 }
 
 #aboutus img {
@@ -456,6 +465,11 @@ aside {
   background-color: fuchsia;
 }
 
+#aboutus a {
+  font-family: "IM Fell DW Pica";
+  font-size: 2.7vh;
+  display: inline;
+}
 
 /*------------------------------------*\ 
   #MAP SECTION
@@ -629,10 +643,13 @@ a.tour_markers:hover + div.mapInfo {
   justify-content: space-between;
   font-family: "IM Fell DW Pica";
   padding: 20px;
+  max-width: 530px;
 }
 
 #privacy > article {
-  background-color: wheat;
+  background: var(--p-light-color);
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
 }
 
 #privacy h1 {
@@ -671,20 +688,25 @@ li {
 }
 
 #terms > article {
-  background-color: wheat;
+  background-color: var(--p-light-color);
+  max-width: 530px;
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
 }
 
 #terms h1 {
   font-family: "Smooth Stone";
-  font-size: 1.2em;
+  font-size: 1.3em;
   max-width: 530px;
   text-align: center;
   align-self: center;
+  word-spacing: 15px;
   text-shadow: 1px 2px #F5F5DC;
 }
 
 #terms h3 {
-  background-color: darksalmon;
+  background-color: var(--p-dark-color);
+  color: white;
   font-family: "IM Fell DW Pica";
   text-align: center;
   padding: 4px 0 4px 0;
@@ -698,13 +720,17 @@ li {
   max-width: 530px;
 }
 
-#testimonials h1 {}
+#testimonials h3 {
+  background-color: var(--s-dark-color);
+  color: white;
+  padding: 5px 0 5px 10px;
+}
 
 #testimonials > article {
-  background-color: wheat;
+  background-color: var(--s-light-color);
   margin-top: 20px;
-  border: 2px solid darksalmon;
-  box-shadow: 5px 10px 18px #888888;
+  border: 2px solid var(--secondary-color);
+  box-shadow: 5px 10px 18px var(--gray-color);
 }
 
 /*------------------------------------*\ 
