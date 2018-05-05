@@ -125,10 +125,12 @@ header h1 {
   animation-iteration-count: infinite;
 animation-name: example;*/
   background-color: var(--secondary-color);
-  background-image: url("images/cinqueterre01.jpg"), url("images/italy341_600.jpg");
+  /* background-image: url("images/cinqueterre01_1024x600.jpg"), url("images/italy341_600.jpg");
   background-position: left top, right top;
   background-repeat: no-repeat;
-  background-size: 80% auto, 19.4% auto;
+  background-size: 80% auto, 19.4% auto;*/
+  background-image: url("images/cinqueterre02_1024x600.jpg");
+  background-size: contain;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -164,7 +166,7 @@ nav#left {
   min-height: 90vh - 6rem;
   mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
   padding: 0 0;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 nav#left ul {
@@ -182,7 +184,7 @@ nav#left ul li a {
   font-family: "IM Fell DW Pica";
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
-  font-size: 1.5em;
+  font-size: 1.9em;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -471,15 +473,14 @@ aside {
 
 #interactive_map > h1 {
   font-size: 1.9em;
-  flex-grow: 1;
+  /*flex-grow: 1;*/
   word-spacing: -1px;
   margin: 20px;
   order: 2;
-  position: absolute;
+  /*position: absolute;
   top: 120px;
-  left: 250px;
-  background-color: rgba(255, 255, 255, .2);
-  width: 250px;
+  left: 250px;*/
+  /*width: 250px;*/
   padding-left: 20px;
 
 }
@@ -803,6 +804,7 @@ li {
     height: 11vh;
     padding-left: 55px;
   }
+  #
 }
 
 
@@ -829,4 +831,5 @@ li {
     height: 11vh;
     padding-left: 55px;
   }
+  #interactive_map > h1 {}
 }

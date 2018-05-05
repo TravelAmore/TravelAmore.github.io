@@ -2,9 +2,7 @@
 <html lang="en-US">
 
 <head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" 
-      type="image/png" 
-      href="http://travelamore.github.io/images/map_heart.png">
+  <link rel="icon" type="image/png" href="http://travelamore.github.io/images/map_heart.png">
   <!--
       Filename: index.html
       Author: Cheryl Crawford
@@ -21,119 +19,204 @@
   <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Satisfy|Slabo+27px" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+  <STYLE TYPE="text/css">
+    /*** set the width and height to match your images **/
+
+    #center {
+      background-image: url("images/cinqueterre01_1024x600.jpg"), url("images/italy341_600.jpg");
+      background-position: left top, right top;
+      background-repeat: no-repeat;
+      background-size: 80% auto, 19.4% auto;
+    }
+
+    .div-slide {
+      width: 100%;
+    }
+
+    #slideshow {
+      position: relative;
+      height: 768px;
+
+    }
+
+    #slideshow DIV {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 8;
+      opacity: 0.0;
+      background-color: #e7c24c;
+    }
+
+    #slideshow DIV.active {
+      z-index: 10;
+      opacity: 1.0;
+    }
+
+    #slideshow DIV.last-active {
+      z-index: 9;
+    }
+
+    #slideshow DIV IMG {
+      height: 768px;
+      display: block;
+      border: 0;
+      margin-bottom: 10px;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #slideshow DIV IMG {
+        display: hidden;
+      }
+
+      .div-slide {
+        display: hidden;
+      }
+
+      #slideshow {
+        position: absolute;
+        height: 0;
+        top: -1000px;
+
+      }
+    }
+
+  </STYLE>
+
+  <!--  <SCRIPT TYPE="text/javascript" SRC="jquery-1.7.2.min.js"></SCRIPT>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <SCRIPT TYPE="text/javascript">
+    /*** 
+                                                                                        Simple jQuery Slideshow Script
+                                                                                        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+                                                                                    ***/
+
+    function slideSwitch() {
+      var $active = $('#slideshow DIV.active');
+
+      if ($active.length == 0) $active = $('#slideshow DIV:last');
+
+      // use this to pull the divs in the order they appear in the markup
+      var $next = $active.next().length ? $active.next() :
+        $('#slideshow DIV:first');
+
+      // uncomment below to pull the divs randomly
+      // var $sibs  = $active.siblings();
+      // var rndNum = Math.floor(Math.random() * $sibs.length );
+      // var $next  = $( $sibs[ rndNum ] );
+
+
+      $active.addClass('last-active');
+
+      $next.css({
+          opacity: 0.0
+        })
+        .addClass('active')
+        .animate({
+          opacity: 1.0
+        }, 1000, function() {
+          $active.removeClass('active last-active');
+        });
+    }
+
+    $(function() {
+      setInterval("slideSwitch()", 3000);
+    });
+
+  </SCRIPT>
+
 </head>
 
 <body>
 
   <header>
-   <div id="skip"><a href="#content">Skip to Main Content</a></div> 
+    <div id="skip"><a href="#content">Skip to Main Content</a></div>
     <h1 id="title">Wander Explore Dream Italy</h1>
     <a id="logo" href="https://TravelAmore.github.io/index.html#"><img src="images/BestLogoCream.png" />
     </a>
 
-   <!-- <i class="material-icons" id="menu">menu</i>
+    <!-- <i class="material-icons" id="menu">menu</i>
     <i class="material-icons" id="list">list</i>-->
-    
+
   </header>
 
-    <div id="center">
-      <nav id="left">
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="map.html">upcoming tour</a></li>
-          <li><a href="honeymoon.html">honeymoon</a></li>
-          <li><a href="testimonials.html">testimonials</a></li>
-          <li><a href="aboutus.html">about us</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </nav>
-      <main>
+  <div id="center">
+    <nav id="left">
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="map.html">upcoming tour</a></li>
+        <li><a href="honeymoon.html">honeymoon</a></li>
+        <li><a href="testimonials.html">testimonials</a></li>
+        <li><a href="aboutus.html">about us</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <DIV CLASS="div-slide">
 
-      </main>
+
+
+
+
+        <DIV ALIGN="CENTER" ID="slideshow">
+          <DIV CLASS="active">
+            <IMG SRC="images/italy1_300x790.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="790" BORDER="0">
+          </DIV>
+          <DIV>
+            <IMG SRC="images/italy2_300x800.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="800" BORDER="0">
+          </DIV>
+          <DIV>
+            <IMG SRC="images/david_300x785.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="785" BORDER="0">
+          </DIV>
+          <DIV>
+            <IMG SRC="images/italy5_300x740.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="740" BORDER="0">
+          </DIV>
+        </DIV>
+
+
+
+
+
+
+
+
+      </DIV>
+    </main>
+  </div>
+
+
+  <footer>
+
+    <div id="legal">
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+      <p id="copyright">
+        &copy; 2018 Travel Amore
+      </p>
     </div>
 
+    <div id="school">
+      <a href="http://www.nwacc.edu"><img src="images/nwacc_logo.png" alt="Northwest Arkansas Community College"></a>
+    </div>
 
-    <footer>
+    <div id="license">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt=Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Travel Amore</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Cheryl Crawford</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </div>
 
-      <div id="legal">
-        <nav>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="disclaimer.html">Disclaimer</a>
-        </nav>
-        <p id="copyright">
-          &copy; 2018 Travel Amore
-        </p>
-      </div>
+    <div id="webmaster">
+      <a href="https://github.com/CherylCrawford"><img src="images/GitHub-Mark-32px.png" alt="Webmaster Sherrie Teague"></a>
+    </div>
 
-      <div id="school">
-        <a href="http://www.nwacc.edu"><img src="images/nwacc_logo.png" alt="Northwest Arkansas Community College"></a>
-      </div>
-
-      <div id="license">
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt=Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Travel Amore</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Cheryl Crawford</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-      </div>
-
-      <div id="webmaster">
-        <a href="https://github.com/CherylCrawford"><img src="images/GitHub-Mark-32px.png" alt="Webmaster Sherrie Teague"></a>
-      </div>
-
-      <div id="tech" <a href="http://www.w3.org/html/logo/">
-        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics">
-        </a>
-      </div>
-    </footer>
-
-</body>
-
-
-
-
-
-
-
-
-
-
-<!-- </head>
-
-  <body>
-
-  <header>
-	 <h1><a href="#"><img src="BestLogo.png" alt="logo"></a></h1>
-	 <h1>experience the marvel of Italy</h1> 
-  </header>
- 
-  
-  <main>
-    <article>
-	  <nav> 
-		<ul>
-			<li><a href="#">home</a></li>
-			<li><a href="#">let's plan</a></li> <!--custom travel-->
-<!-- <li><a href="#">our tours</a></li>
-			<li><a href="#">honeymoon</a></li> 
-			<li><a href="#">about us?</a></li> <!-- why us? -->
-<!--<li><a href="#">testimonials</a></li>
-			<li><a href="#">contact</a></li>
-			<li><a href="#">travel blog</a></li>
-		</ul>
-	  </nav>
-	</article>-->
-
-
-<!-- /*<aside id="right">
-	 
-	</aside>*/
-	
-  </main>
-  
-  <footer>
-      <div id="school"/> 
-        <a href="#"><img src="nwacc_logo.png" alt="school logo"></a>
-      </div>
+    <div id="tech" <a href="http://www.w3.org/html/logo/">
+      <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-graphics-semantics.png" width="197" height="64" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics">
+      </a>
+    </div>
   </footer>
-    
 </body>
 
--->
+</html>
