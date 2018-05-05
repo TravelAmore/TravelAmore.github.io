@@ -109,33 +109,8 @@ header h1 {
   max-width: 530px;
 }
 
-/* The animation code */
-
-@keyframes example {
-  0% {
-    background-color: red;
-  }
-  25% {
-    background-color: yellow;
-  }
-  50% {
-    background-color: blue;
-  }
-  100% {
-    background-color: green;
-  }
-}
-
-
 #center {
-  /*animation-duration: 7s;
-  animation-iteration-count: infinite;
-animation-name: example;*/
   background-color: var(--primary-color);
-  /* background-image: url("images/cinqueterre01_1024x600.jpg"), url("images/italy341_600.jpg");
-  background-position: left top, right top;
-  background-repeat: no-repeat;
-  background-size: 80% auto, 19.4% auto;*/
   background-image: url("images/cinqueterre02_1024x600.jpg");
   background-size: contain;
   display: flex;
@@ -144,9 +119,20 @@ animation-name: example;*/
   flex: 1;
   min-height: 90vh - 6rem;
   max-width: 1200px;
-  /*width: 99.3%;*/
   margin: auto;
+}
 
+.shadow_box {
+  background: var(--p-light-color);
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
+}
+
+.parchment_box {
+  background-image: url("images/parchment_256x256.jpg");
+  background-size: cover;
+  box-shadow: 5px 10px 18px var(--gray-color);
+  border: 2px solid var(--secondary-color);
 }
 
 main {
@@ -358,9 +344,9 @@ aside {
 \*------------------------------------*/
 
 #contactus > div.address > address {
-  background-color: var(--p-light-color);
+  /* background-color: var(--p-light-color);
   box-shadow: 5px 10px 18px var(--gray-color);
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);*/
   padding: 10px;
 }
 
@@ -374,14 +360,19 @@ aside {
 
 .article_h1 {
   padding-left: 20px;
+  margin-top: 15px;
 }
 
-#contactus > div.address > aside {
+#contactus article {
+  margin-top: 0;
+}
+
+/*#contactus > div.address > aside {
   background-color: var(--p-light-color);
   box-shadow: 5px 10px 18px var(--gray-color);
   border: 2px solid var(--secondary-color);
 
-}
+}*/
 
 #contactus > div.address {
   display: flex;
@@ -450,9 +441,9 @@ aside {
 }
 
 #aboutus > article {
-  background-color: var(--p-light-color);
+  /* background-color: var(--p-light-color);
   box-shadow: 5px 10px 18px var(--gray-color);
-  border: 2px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);*/
   padding: 20px;
   margin-top: 15px;
 }
@@ -487,47 +478,30 @@ aside {
 
 #interactive_map > h1 {
   font-size: 1.9em;
-  /*flex-grow: 1;*/
   word-spacing: -1px;
   margin: 20px;
   order: 2;
-  /*position: absolute;
-  top: 120px;
-  left: 250px;*/
-  /*width: 250px;*/
   padding-left: 20px;
-
-}
-
-#interactive_map p {
-  line-height: 1.4em;
-  margin: 20px;
-}
-
-#interactive_map > p {
-  flex-grow: 1;
-  width: 50%;
-  max-width: 22em;
-  margin: 10px;
-  padding: 0;
-  order: 1;
-  background-color: beige;
 }
 
 div.mapInfo {
-  background-color: wheat;
-  color: black;
-  font-size: 1.07em;
-  font-family: "IM Fell DW Pica";
-  margin-top: 20px;
-  padding-bottom: 20px;
+  background-color: var(--s-light-color);
+  /*padding-bottom: 20px;*/
   width: 400px;
+  margin: 20px;
+}
+
+div.mapInfo > p {
+  color: black;
+  font-size: 1.2em;
+  font-family: "IM Fell DW Pica";
+  margin: 20px 20px 5px 20px;
 }
 
 div.mapInfo h2 {
-  background-color: lightblue;
+  background-color: var(--s-dark-color);
   font-size: 1.5em;
-  color: darkblue;
+  color: white;
   font-family: "IM Fell DW Pica";
   font-weight: normal;
   padding: 10px 20px;
@@ -570,12 +544,12 @@ img#mapImage {
 }
 
 #map_div > figcaption {
-  color: darkblue;
+  color: var(--s-dark-color);
   font-size: 1.3em;
   text-align: center;
   font-family: "IM Fell DW Pica";
   padding-bottom: 5px;
-  background-color: lightblue;
+  background-color: var(--s-light-color);
 }
 
 div.tour_markers > a {
@@ -732,6 +706,7 @@ li {
   border: 2px solid var(--secondary-color);
   box-shadow: 5px 10px 18px var(--gray-color);
 }
+
 
 /*------------------------------------*\ 
   #RESPONSIVE SECTION
