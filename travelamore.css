@@ -630,8 +630,8 @@ a.tour_markers:hover + div.mapInfo {
 }
 
 #privacy img {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  float: right;
+  margin-right: 25px;
   width: 80px;
 }
 
@@ -659,6 +659,7 @@ a.tour_markers:hover + div.mapInfo {
 
 #privacy h3 {
   font-size: 1.3em;
+  margin-left: 50px;
 }
 
 #privacy h4,
@@ -689,12 +690,17 @@ li {
 \*------------------------------------*/
 
 #terms {
-  padding: 20px
+  max-width: 530px;
+}
+
+#terms img {
+  width: 60px;
 }
 
 #terms > article {
   background-color: var(--p-light-color);
   max-width: 530px;
+  margin-top: 10px;
   box-shadow: 5px 10px 18px var(--gray-color);
   border: 2px solid var(--secondary-color);
 }
