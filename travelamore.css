@@ -707,6 +707,80 @@ li {
   box-shadow: 5px 10px 18px var(--gray-color);
 }
 
+/*------------------------------------*\ 
+  #HONEYMOON SECTION
+\*------------------------------------*/
+
+#honeymoon_main {
+  flex-direction: column;
+}
+
+#honeymoon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#honeymoon > article {
+  max-width: 200px;
+  order: 1;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#honeymoon > nav {
+  max-width: 300px;
+  width: 250px;
+  order: 3;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+figure#honeymoon_fig_big {
+  order: 2;
+  max-width: 360px;
+  img {
+    width: 360px;
+  }
+}
+
+figure#honeymoon_fig_big > img {
+  width: (100% x 4/9) -40px;
+
+}
+
+figure#honeymoon_fig1 {
+  order: 4;
+  max-width: 200px;
+}
+
+figure#honeymoon_fig1 > img {
+  width: 200px;
+}
+
+figure#honeymoon_fig2 {
+  order: 5;
+  max-width: 200px;
+}
+
+figure#honeymoon_fig2 > img {
+  width: 200px;
+}
+
+figure#honeymoon_fig3 {
+  order: 6;
+  max-width: 200px;
+}
+
+figure#honeymoon_fig3 > img {
+  width: 200px;
+}
+
+
+
+
+
 
 /*------------------------------------*\ 
   #RESPONSIVE SECTION

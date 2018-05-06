@@ -36,7 +36,7 @@
     #slideshow {
       position: relative;
       height: 768px;
-
+      color: var(--g-dark-color);
     }
 
     #slideshow DIV {
@@ -60,7 +60,7 @@
     #slideshow DIV IMG {
       height: 768px;
       display: block;
-      border: 0;
+      border: 1;
       margin-bottom: 10px;
       margin-right: 15px;
       margin-left: 15px;
@@ -80,21 +80,20 @@
         height: 0;
         top: -1000px;
       }
-      
+
       #center {
-        background: 
+        background:
       }
     }
-
   </STYLE>
 
   <!--  <SCRIPT TYPE="text/javascript" SRC="jquery-1.7.2.min.js"></SCRIPT>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <SCRIPT TYPE="text/javascript">
     /*** 
-                                                                                        Simple jQuery Slideshow Script
-                                                                                        Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
-                                                                                    ***/
+                                                                                                                                            Simple jQuery Slideshow Script
+                                                                                                                                            Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+                                                                                                                                        ***/
 
     function slideSwitch() {
       var $active = $('#slideshow DIV.active');
@@ -106,9 +105,9 @@
         $('#slideshow DIV:first');
 
       // uncomment below to pull the divs randomly
-      // var $sibs  = $active.siblings();
-      // var rndNum = Math.floor(Math.random() * $sibs.length );
-      // var $next  = $( $sibs[ rndNum ] );
+      var $sibs = $active.siblings();
+      var rndNum = Math.floor(Math.random() * $sibs.length);
+      var $next = $($sibs[rndNum]);
 
 
       $active.addClass('last-active');
@@ -127,7 +126,6 @@
     $(function() {
       setInterval("slideSwitch()", 3000);
     });
-
   </SCRIPT>
 
 </head>
@@ -165,16 +163,16 @@
 
         <DIV ALIGN="CENTER" ID="slideshow">
           <DIV CLASS="active">
-            <IMG SRC="images/italy1_300x790.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="790" BORDER="0">
+            <IMG SRC="images/italy1_300x790.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="790" BORDER="4">
           </DIV>
           <DIV>
-            <IMG SRC="images/italy2_300x800.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="800" BORDER="0">
+            <IMG SRC="images/italy2_300x800.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="800" BORDER="4">
           </DIV>
           <DIV>
-            <IMG SRC="images/david_300x785.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="785" BORDER="0">
+            <IMG SRC="images/david_300x785.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="785" BORDER="4">
           </DIV>
           <DIV>
-            <IMG SRC="images/italy5_300x740.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="740" BORDER="0">
+            <IMG SRC="images/italy5_300x740.jpg" ALT="travel amore tour" WIDTH="300" HEIGHT="740" BORDER="4">
           </DIV>
         </DIV>
 
