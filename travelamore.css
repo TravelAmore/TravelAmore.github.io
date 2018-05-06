@@ -162,11 +162,11 @@ nav#left ul {
 
 
 nav#left ul li a {
-  padding: 3px 0;
+  padding: 4px 0;
   font-family: "IM Fell DW Pica";
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
-  font-size: 1.9em;
+  font-size: 2em;
   text-align: center;
   text-decoration: none;
   display: block;
