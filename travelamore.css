@@ -117,7 +117,7 @@ header h1 {
   flex-direction: row;
   flex-wrap: nowrap;
   flex: 1;
-  min-height: 90vh - 6rem;
+  min-height: 90vh - 5rem;
   max-width: 1200px;
   margin: auto;
 }
@@ -140,7 +140,7 @@ main {
   flex-direction: row;
   /*background-color: var(--primary-color);*/
   flex-grow: 9;
-  min-height: 90vh - 6rem;
+  min-height: 90vh - 5rem;
 }
 
 nav#left {
@@ -236,7 +236,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  padding: 1 rem;
   background: var(--primary-color);
   max-height: 10rem;
   max-width: 1200px;
@@ -245,38 +245,41 @@ footer {
 
 footer > nav {
   flex-direction: row;
-  background-color: cyan;
 }
 
 #legal > nav {
   flex-direction: row;
-  background-color: cyan;
+  padding: 0;
   order: 2;
 }
 
 #legal > nav > a {
   font-size: .8em;
-  background-color: pink;
+  margin: 1 1 1 1;
 }
 
 #legal {
   display: flex;
   flex-direction: row;
-  background-color: blue;
-  flex-wrap: nowrap;
-  max-width: 250px;
+  background-color: var(--p-dark-color);
+  flex-wrap: wrap;
+  padding-left: 10px;
+  max-width: 150px;
 }
 
 #school img {
-  height: 45px;
-  width: 60px;
+  /*height: 45px;*/
+  height: auto;
+  /*width: 60px;*/
+  width: 80px;
   padding-left: 10px;
+  margin-right: 10px;
 }
 
 #license {
   font-size: .61em;
-  max-width: 150px;
-  padding-left: 10px
+  max-width: 170px;
+  padding-left: 10px;
 }
 
 #license a {
@@ -285,7 +288,8 @@ footer > nav {
 
 #copyright {
   padding-left: 10px;
-  background-color: red;
+  color: white;
+  margin: 0;
   order: 1;
   font-size: .8em;
 }
@@ -296,7 +300,7 @@ footer > nav {
 
 #tech img {
   height: auto;
-  width: 100px;
+  width: 120px;
   padding-left: 10px;
 }
 
@@ -740,14 +744,13 @@ li {
 figure#honeymoon_fig_big {
   order: 2;
   max-width: 360px;
-  img {
+  /* img {
     width: 360px;
-  }
+  }*/
 }
 
 figure#honeymoon_fig_big > img {
-  width: (100% x 4/9) -40px;
-
+  width: 350px;
 }
 
 figure#honeymoon_fig1 {
