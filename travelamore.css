@@ -44,7 +44,7 @@ body {
   flex-direction: column;
   position: relative;
   margin: 0;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
   min-height: 100%;
   font-family: 'Slabo 27px', serif;
   background-color: var(--g-light-color);
@@ -238,7 +238,7 @@ footer {
   left: 0;
   padding: 1 rem;
   background: var(--primary-color);
-  max-height: 10rem;
+  max-height: 5rem;
   max-width: 1200px;
   margin: auto;
 }
@@ -302,6 +302,11 @@ footer > nav {
   height: auto;
   width: 120px;
   padding-left: 10px;
+}
+
+#tech_js {
+  border: 1px solid black;
+  margin-right: 5px;
 }
 
 header,
@@ -743,47 +748,73 @@ li {
 
 figure#honeymoon_fig_big {
   order: 2;
-  max-width: 360px;
-  /* img {
-    width: 360px;
-  }*/
+  width: 33%;
 }
 
 figure#honeymoon_fig_big > img {
-  width: 350px;
+  width: 100%;
+
 }
 
 figure#honeymoon_fig1 {
   order: 4;
-  max-width: 200px;
+  width: 24%;
 }
 
 figure#honeymoon_fig1 > img {
-  width: 200px;
+  width: 100%;
 }
 
 figure#honeymoon_fig2 {
   order: 5;
-  max-width: 200px;
+  width: 24%;
 }
 
 figure#honeymoon_fig2 > img {
-  width: 200px;
+  width: 100%;
 }
 
 figure#honeymoon_fig3 {
   order: 6;
-  max-width: 200px;
+  width: 24%;
 }
 
 figure#honeymoon_fig3 > img {
-  width: 200px;
+  width: 100%;
 }
 
+#honeymoon h3 {
+  text-align: center;
+  background-color: var(--p-dark-color);
+  color: white;
+  font-size: 1.4em;
+  letter-spacing: 1.2px;
+  padding: 5px 0px;
+  font-family: "IM Fell DW Pica";
+}
 
+#honeymoon > nav a {
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.3em;
+}
 
+#honeymoon > nav li {
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
 
+#honeymoon p {
+  color: black;
+  font-size: 1.3em;
 
+}
+
+#honeymoon figcaption {
+  text-align: center;
+  font-size: 1.3em;
+}
 
 /*------------------------------------*\ 
   #RESPONSIVE SECTION
