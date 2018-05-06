@@ -636,14 +636,15 @@ a.tour_markers:hover + div.mapInfo {
 }
 
 #privacy h1 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: center;
   align-self: center;
 }
 
 #privacy h2 {
   font-family: "Smooth Stone";
-  font-size: 1.2em;
+  font-size: 1.3em;
+  letter-spacing: 3px;
   max-width: 530px;
   text-align: center;
   align-self: center;
