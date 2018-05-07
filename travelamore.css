@@ -98,7 +98,7 @@ header h1 {
 \*------------------------------------*/
 
 #center h1 {
-  word-spacing: 25px;
+  word-spacing: .8em;
   letter-spacing: .25em;
   font-family: "Smooth Stone";
   font-size: 2.5em;
@@ -328,6 +328,7 @@ aside {
 #disclaimer > ol {
   list-style-type: upper-roman;
   max-width: 530px;
+  width: 90%;
   background-color: var(--p-light-color);
   box-shadow: 5px 10px 18px var(--gray-color);
   border: 2px solid var(--secondary-color);
@@ -346,7 +347,9 @@ aside {
   width: 1.3em;
 }
 
-#disclaimer p {}
+#disclaimer p {
+  width: 90%;
+}
 
 /*------------------------------------*\ 
   #CONTACTUS SECTION
@@ -446,7 +449,7 @@ aside {
 
 #aboutus p {
   max-width: 20em;
-  font-size: 2.7vh;
+  font-size: 1.3em;
 }
 
 #aboutus > article {
@@ -467,9 +470,11 @@ aside {
 
 #aboutus a {
   font-family: "IM Fell DW Pica";
-  font-size: 2.7vh;
+  font-size: 1.3em411\]=;
   display: inline;
 }
+
+
 
 /*------------------------------------*\ 
   #MAP SECTION
@@ -674,15 +679,15 @@ h5 {
 }
 
 #privacy h2,
-h3,
-h4,
-h5,
-p,
-ul,
-li {
-  max-width: 530px;
-
+#privacy h3,
+#privacy h4,
+#privacy h5,
+#privacy p,
+#privacy ul,
+#privacy li {
+  max-width: 530;
 }
+
 
 
 /*------------------------------------*\ 
@@ -690,6 +695,10 @@ li {
 \*------------------------------------*/
 
 #terms {
+  flex-direction: column;
+}
+
+#terms > content {
   max-width: 530px;
 }
 
@@ -697,7 +706,7 @@ li {
   width: 60px;
 }
 
-#terms > article {
+#terms article {
   background-color: var(--p-light-color);
   max-width: 530px;
   margin-top: 10px;
@@ -858,6 +867,7 @@ figure#honeymoon_fig3 > img {
   #center {
     width: 100%;
     background: beige;
+    flex-direction: column;
   }
   footer {
     width: 100%;
@@ -872,6 +882,40 @@ figure#honeymoon_fig3 > img {
     margin-right: 10px;
   }
 
+  nav#left {
+    order: 2;
+  }
+
+  main {
+    order: 1;
+    flex-grow: 0;
+  }
+
+  #honeymoon article {
+    max-width: 94%;
+    margin-left: 0;
+  }
+
+  #honeymoon figure {
+    width: 90%;
+  }
+
+  #honeymoon nav {
+    max-width: 100%;
+    width: 90%;
+  }
+
+  #aboutus {
+    width: 100%;
+  }
+
+  #contactus > div.address {
+    flex-direction: column;
+  }
+
+  #privacy h1 {
+    font-size: .9em;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -882,6 +926,7 @@ figure#honeymoon_fig3 > img {
   }
   #center {
     width: 100%;
+    flex-direction: column;
   }
   footer {
     width: 100%;
@@ -890,10 +935,38 @@ figure#honeymoon_fig3 > img {
     font-size: 1.7em;
   }
   #logo img {
-    height: 8vh;
+    height: 30px;
     padding-left: 15px;
     margin-right: 10px;
   }
+
+  nav#left {
+    order: 2;
+  }
+
+  main {
+    order: 1;
+  }
+
+  #honeymoon article {
+    max-width: 41%;
+    margin-left: 0;
+  }
+
+  #honeymoon figure {
+    width: 41%;
+  }
+
+  #honeymoon nav {
+    max-width: 100%;
+    width: 41%;
+  }
+
+  #contactus > div.address {
+    flex-direction: row;
+  }
+
+
 
 }
 
@@ -907,7 +980,9 @@ figure#honeymoon_fig3 > img {
   }
   #center {
     width: 100%;
+    flex-direction: row;
   }
+
   footer {
     width: 100%;
   }
@@ -918,6 +993,35 @@ figure#honeymoon_fig3 > img {
     height: 9vh;
     padding-left: 25px;
   }
+
+  nav#left {
+    order: 1;
+  }
+
+  main {
+    order: 2;
+  }
+
+  #honeymoon article {
+    max-width: 50%;
+    margin-left: 0;
+  }
+
+  #honeymoon figure {
+    width: 33%;
+  }
+
+  #honeymoon nav {
+    max-width: 100%;
+    width: 46%;
+  }
+
+  #contactus > div.address {
+    flex-direction: row;
+  }
+
+
+
 }
 
 
@@ -930,6 +1034,7 @@ figure#honeymoon_fig3 > img {
   }
   #center {
     width: 100%;
+    flex-direction: row;
   }
   footer {
     width: 100%;
@@ -941,7 +1046,35 @@ figure#honeymoon_fig3 > img {
     height: 11vh;
     padding-left: 55px;
   }
-  #
+
+  nav#left {
+    order: 1;
+  }
+
+  main {
+    order: 2;
+  }
+
+  #honeymoon article {
+    max-width: 20%;
+    margin-left: 0;
+  }
+
+
+  #honeymoon figure {
+    width: 22%;
+  }
+
+  #honeymoon figure#honeymoon_fig_big {
+    width: 40%;
+  }
+
+  #honeymoon nav {
+    max-width: 100%;
+    width: 25%;
+  }
+
+
 }
 
 
@@ -956,6 +1089,7 @@ figure#honeymoon_fig3 > img {
   #center {
     width: 1200px;
     margin: auto;
+    flex-direction: row;
   }
   footer {
     width: 1200px;
@@ -968,10 +1102,16 @@ figure#honeymoon_fig3 > img {
     height: 11vh;
     padding-left: 55px;
   }
+
+  nav#left {
+    order: 1;
+  }
+
+  main {
+    order: 2;
+  }
+
   #interactive_map > h1 {}
 
-  header,
-  footer,
-  #center {
-    /*box-shadow: 0px 0px 31px 10px rgba(136, 136, 136, 1);
-  }*/
+
+}
